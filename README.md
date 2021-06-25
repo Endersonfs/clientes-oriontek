@@ -2,9 +2,9 @@
 
 
 
-## Acerca de la practica
+## Acerca de la práctica
 
-Esta practica es la prueba para una entrevista empresarial.
+Esta práctica es la prueba para una entrevista empresarial, Esta realizada en PHP/Laravel.
 
 
 ## Prueba Técnica a desarrollar:

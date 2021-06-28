@@ -31,3 +31,6 @@ alter table usuario add COLUMN created_at datetime;
 --alter table cliente direccion 
 alter table cliente_direccion add column updated_at datetime;
 alter table cliente_direccion add column created_at datetime;
+
+--vistas
+create VIEW vListaUsuario as SELECT * from usuario order BY created_at DESC

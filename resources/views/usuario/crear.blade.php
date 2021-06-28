@@ -17,12 +17,12 @@
             @csrf
             <div class="form-group">
               <label for="exampleInputEmail1">Nombre</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" name="nombre" aria-describedby="emailHelp" placeholder="Introduzca el Nombre">
+              <input type="text" class="form-control"  name="nombre" aria-describedby="emailHelp" placeholder="Introduzca el Nombre">
               <small id="emailHelp" class="form-text text-muted">Favor de llenar este campo con su nombre</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Apellidos</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" name="apellidos" aria-describedby="emailHelp" placeholder="Introduzca sus Apellidos">
+              <input type="text" class="form-control"  name="apellidos" aria-describedby="emailHelp" placeholder="Introduzca sus Apellidos">
              
               <label for="exampleInputEmail1">Correo Electrónico</label>
               <input type="email" class="form-control" id="exampleInputEmail1" name="correoelectronico" aria-describedby="emailHelp" placeholder="Introduzca su Correo Electrónico">

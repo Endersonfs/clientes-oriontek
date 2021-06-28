@@ -7,13 +7,15 @@ use Illuminate\Http\Request;
 use App\Models\Usuarios;
 use App\Models\ClienteDireccion;
 use App\Models\ClienteTelefono;
+use App\Models\vListaUsuario;
 
 class UsuariosController extends Controller
 {
     //
     public function lista()
     {
-        return view('usuario.index');
+        $listaDeUsuarios = vListaUsuario::paginate(15);
+        return view('usuario.index',compact('listaDeUsuarios'));
     }
     public function crearusuario()
     {       
@@ -40,8 +42,7 @@ class UsuariosController extends Controller
         {
             $resultado =$guardarUsuario;
             return $resultado; 
-        }
-        
+        }        
 
         //$metodo = $this->clienteDireccion('hasdhfahsdf');
         // $guardar = $this->guardar('Enderson','Florian Solano','prueba@prueba.com');

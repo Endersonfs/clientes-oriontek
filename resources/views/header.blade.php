@@ -55,15 +55,10 @@
     
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Lista de Usuarios</a>
+    <a class="navbar-brand" href="#">@yield('titulopage')</a>
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-
-   
-    <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Nombre..." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+    </button>   
+    @include('buscador')
   </div>
 </nav>

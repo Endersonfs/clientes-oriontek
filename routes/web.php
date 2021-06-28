@@ -17,5 +17,7 @@ use App\Http\Controllers\UsuariosController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/usuarios',[UsuariosController::class,'lista'])->name('lista');
+//lista de rutas de los usuarios
+Route::get('/usuarios',[UsuariosController::class,'lista'])->name('usuaios.lista');
+Route::get('/usuario/crear',[UsuariosController::class,'crearusuario'])->name('usuaios.crear');
+Route::post('/usuario/crear',[UsuariosController::class,'guardarusuarios'])->name('usuarios.guardar');

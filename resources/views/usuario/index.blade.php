@@ -1,9 +1,9 @@
-
+@section('titulopage', 'Lista de Usuarios')
 @include('header')
 <main class="container">
     <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
       
-      <a href="#" class="btn btn-primary">Agregar Nuevo cliente</a>
+      <a href="/usuario/crear" class="btn btn-primary">Agregar Nuevo Cliente</a>
     </div>
   
     <div class="my-3 p-3 bg-body rounded shadow-sm">

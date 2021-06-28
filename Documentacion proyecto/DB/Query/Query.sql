@@ -23,3 +23,11 @@ create table Cliente_Tipo_Telefono
     Cliente_Tipo_Telefono int not null PRIMARY key AUTO_INCREMENT,
     Descripcion varchar(150)
 );
+
+-- alter table usuario
+alter table usuario add column updated_at datetime;
+alter table usuario add COLUMN created_at datetime;
+
+--alter table cliente direccion 
+alter table cliente_direccion add column updated_at datetime;
+alter table cliente_direccion add column created_at datetime;

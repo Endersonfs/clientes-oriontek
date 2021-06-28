@@ -3,7 +3,7 @@
 <main class="container">
     <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
       
-      <a href="/usuario/crear" class="btn btn-primary">Agregar Nuevo Cliente</a>
+      <a href="{{route('usuaios.crear')}}" class="btn btn-primary">Agregar Nuevo Cliente</a>
     </div>
   
     <div class="my-3 p-3 bg-body rounded shadow-sm">
@@ -17,14 +17,12 @@
         <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
           <div class="d-flex justify-content-between">
             <strong class="text-gray-dark">{{$usuarios['Nombre']}} {{$usuarios['Apellidos']}}</strong>
-            <a href="#">Ver mas</a>
+            <a href="/usuario/{{$usuarios['ID_Usuario']}}">Ver mas</a>
           </div>
           <span class="d-block">{{$usuarios['CorreoElectronico']}}</span>
         </div>
       </div>  
-      @endforeach
-
-         
+      @endforeach         
       
       <small class="d-block text-end mt-3">
         {{ $listaDeUsuarios->links() }}

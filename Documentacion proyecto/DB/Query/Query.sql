@@ -34,3 +34,9 @@ alter table cliente_direccion add column created_at datetime;
 
 --vistas
 create VIEW vListaUsuario as SELECT * from usuario order BY created_at DESC
+
+create view vUsuariosDetalles as
+SELECT usu.ID_Usuario as id, usu.* from usuario as usu ORDER by created_at DESC
+
+create view vClienteDireccion as
+SELECT cliDirecion.ID_Cliente as id, cliDirecion.* from cliente_direccion as cliDirecion ORDER by created_at DESC

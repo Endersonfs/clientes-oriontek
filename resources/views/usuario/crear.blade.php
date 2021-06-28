@@ -51,7 +51,7 @@
             <br>
             <div class="form-group">
             <button class="btn btn-primary">Guardar</button>
-            <a href="/usuarios" class="btn btn-danger">Cancelar</a>
+            <a href="{{route('usuaios.lista')}}" class="btn btn-danger">Cancelar</a>
             <button id="adicional" name="adicional" type="button" class="btn btn-warning">Agregar Direccion</button>
             
             </div>

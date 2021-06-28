@@ -8,6 +8,8 @@ use App\Models\Usuarios;
 use App\Models\ClienteDireccion;
 use App\Models\ClienteTelefono;
 use App\Models\vListaUsuario;
+use App\Models\vUsuariosDetalles;
+use App\Models\vClienteDireccion;
 
 class UsuariosController extends Controller
 {
@@ -20,6 +22,13 @@ class UsuariosController extends Controller
     public function crearusuario()
     {       
         return view('usuario.crear');
+    }
+    public function usuariodetalles($detallesusuario)
+    {
+        $datosdetallesusuario = vUsuariosDetalles::find($detallesusuario);
+        //$datosClienteDetalles = vClienteDireccion::all($detallesusuario);
+        //return $datosClienteDetalles;
+        return view('usuario.details',compact(['datosdetallesusuario']));
     }
     public function guardarusuarios(Request $request)
     {

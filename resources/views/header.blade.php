@@ -59,6 +59,6 @@
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>   
-    @include('buscador')
+    {{-- @include('buscador') --}}
   </div>
 </nav>

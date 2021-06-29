@@ -40,14 +40,7 @@
 						<td class="eliminar"><input id="btn1a" class="btn1" type="button"   value="Menos -"/></td>
 					</tr>
 				</table>
-            </div>
-            {{-- <div class="form-group">
-                <label for="exampleInputPassword1">Dirección</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Dirección">
-                <small id="emailHelp" class="form-text text-muted">Introduzca su Dirección</small>
-                <button id="adicional" name="adicional" type="button" class="btn btn-warning">Agregar</button>
-                <button id="adicional" name="adicional" type="button" class="btn btn-warning">Eliminar</button>
-            </div> --}}
+            </div>            
             <br>
             <div class="form-group">
             <button class="btn btn-primary">Guardar</button>

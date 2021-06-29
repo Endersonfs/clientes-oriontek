@@ -28,8 +28,7 @@ class UsuariosController extends Controller
     {
         $datosdetallesusuario = vUsuariosDetalles::find($detallesusuario);
         $datosClienteDetalles = vClienteDireccion::where('ID_Cliente','=',$detallesusuario)->get();
-        
-        //return dd($datosClienteDetalles);
+       
         return view('usuario.details',compact(['datosdetallesusuario','datosClienteDetalles']));
     }
     public function guardarusuarios(Request $request)
@@ -55,8 +54,7 @@ class UsuariosController extends Controller
             return $resultado; 
         }        
 
-        //$metodo = $this->clienteDireccion('hasdhfahsdf');
-        // $guardar = $this->guardar('Enderson','Florian Solano','prueba@prueba.com');
+      
         return dd($resultado);
     }
     private function guardar($nombre,$apellidos,$correoElectronico)
@@ -77,19 +75,7 @@ class UsuariosController extends Controller
         }
 
         return 'Metodo guardar';
-
-        // try{
-        //     $inventario = new Inventario();           
-        //     $inventario->ID_Inventario = $request->producto;
-        //     $inventario->ID_tipo_invrentarioRegistro = $request->tregistro;
-        //     $inventario->ID_UsuarioRegistrado =1;
-        //     $inventario->Cantidad = $request->cantidad;
-        //     $inventario->save();
-        // }catch(Exception $e){
-        //     echo '<script language="javascript">alert("Error al guardar");</script>';
-        // }
-        
-        // return redirect('/inventario/listaregistro');
+      
     }
     private function clienteDireccion($descripcion)
     {

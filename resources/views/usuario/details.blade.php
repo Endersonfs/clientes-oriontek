@@ -27,7 +27,12 @@
               <tr>                
                 <td>Direccion</td>              
                 <td>
-                    ...                 
+                    @foreach ($datosClienteDetalles as $datositem)
+                    - {{$datositem['Descripcion']}}<br>
+                    @endforeach
+                                    
+                    {{-- {{$datosClienteDetalles->id}}                     --}}
+                    {{-- {{$datosdetallesusuario->id}} --}}                    
                 </td>   
                           
                 {{-- @foreach ($datosClienteDetalles as $direccion)

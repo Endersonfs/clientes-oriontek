@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Http;
 
 use Illuminate\Http\Request;
 
@@ -26,9 +27,10 @@ class UsuariosController extends Controller
     public function usuariodetalles($detallesusuario)
     {
         $datosdetallesusuario = vUsuariosDetalles::find($detallesusuario);
-        //$datosClienteDetalles = vClienteDireccion::all($detallesusuario);
-        //return $datosClienteDetalles;
-        return view('usuario.details',compact(['datosdetallesusuario']));
+        $datosClienteDetalles = vClienteDireccion::where('ID_Cliente','=',$detallesusuario)->get();
+        
+        //return dd($datosClienteDetalles);
+        return view('usuario.details',compact(['datosdetallesusuario','datosClienteDetalles']));
     }
     public function guardarusuarios(Request $request)
     {

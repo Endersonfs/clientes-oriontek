@@ -49,10 +49,11 @@ class UsuariosController extends Controller
             // almacenando en direccion
             $guardarDireccionUsuario = $this->clienteDireccion($direccion);
             $resultado = "se guardo con exito";
+            return view('usuario.crear');
         }else
         {
             $resultado =$guardarUsuario;
-            return $resultado; 
+            return view('usuario.crear');
         }        
 
         //$metodo = $this->clienteDireccion('hasdhfahsdf');
